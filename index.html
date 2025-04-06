@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>오늘의 뉴스</title>
+    <style>
+        @font-face {
+            font-family: 'KOHIBaeumOTF';
+            src: url('https://raw.githubusercontent.com/2020AMGN/gonafont/main/font/KOHIBaeumOTF.otf') format('opentype');
+            font-weight: normal;
+        }
+
+        @font-face {
+            font-family: 'NEXON Lv2 Gothic Medium';
+            src: url('https://raw.githubusercontent.com/2020AMGN/gonafont/main/font/NEXON%20Lv2%20Gothic%20Medium.ttf') format('truetype');
+            font-weight: normal;
+        }
+
+        @font-face {
+            font-family: 'GmarketSansTTFMedium';
+            src: url('https://raw.githubusercontent.com/2020AMGN/gonafont/main/font/GmarketSansTTFMedium.ttf') format('truetype');
+            font-weight: normal;
+        }
+
+        @font-face {
+            font-family: 'RIDIBatang';
+            src: url('https://raw.githubusercontent.com/2020AMGN/gonafont/main/font/RIDIBatang.otf') format('opentype');
+            font-weight: normal;
+        }
+
+        @font-face {
+            font-family: 'EliceDigitalCodingverH_Regular';
+            src: url('https://raw.githubusercontent.com/2020AMGN/gonafont/main/font/EliceDigitalCodingverH_Regular.ttf') format('truetype');
+            font-weight: normal;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'RIDIBatang', sans-serif; /* 본문 폰트 */
+            line-height: 1.6;
+            color: #333;
+            background-color: #f5f5f5;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+            background-color: white;
+        }
+
+        .main-header {
+            text-align: center;
+            margin-bottom: 3rem;
+            padding-bottom: 2rem;
+            border-bottom: 2px solid #eee;
+        }
+
+        .main-header h1 {
+            font-family: 'KOHIBaeumOTF'; /* 제목 폰트 */
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+        }
+
+        .date {
+            color: #666;
+            font-size: 1rem;
+        }
+
+        .article-header {
+            margin-bottom: 2rem;
+        }
+
+        .category-box {
+            background-color: #f8f0ff;
+            padding: 1.5rem;
+            margin-bottom: 2rem;
+            border-radius: 8px;
+        }
+
+        .category-box h2 {
+            font-family: 'NEXON Lv2 Gothic Medium'; /* 부제목 폰트 */
+            font-size: 1.5rem;
+            margin-bottom: 0.5rem;
+            color: #333;
+        }
+
+        .category-box p {
+            color: #666;
+            font-size: 0.9rem;
+            margin-bottom: 0.3rem;
+        }
+
+        .article-title {
+            font-family: 'GmarketSansTTFMedium'; /* 소제목 폰트 */
+            font-size: 2rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+        }
+
+        .article-subtitle {
+            font-size: 1.2rem;
+            color: #666;
+            margin-bottom: 2rem;
+        }
+
+        .article-content {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 2rem;
+        }
+
+        .news-image {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            margin-bottom: 1.5rem;
+        }
+
+        .text-content p {
+            margin-bottom: 1.5rem;
+            font-size: 1.1rem;
+            line-height: 1.8;
+            color: #444;
+        }
+
+        @media (min-width: 768px) {
+            .article-content {
+                grid-template-columns: 1fr 1fr;
+            }
+            
+            .news-image {
+                margin-bottom: 0;
+            }
+        }
+
+        @media (max-width: 767px) {
+            .container {
+                padding: 1rem;
+            }
+            
+            .main-header h1 {
+                font-size: 2rem;
+            }
+            
+            .article-title {
+                font-size: 1.5rem;
+            }
+            
+            .article-subtitle {
+                font-size: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header class="main-header">
+            <h1>오늘의 뉴스</h1>
+            <p class="date">2025년 3월 | 제12호</p>
+        </header>
+        <main>
+            <article class="news-article">
+                <div class="article-header">
+                    <div class="category-box">
+                        <h2>이슈를 말하는 기획기사</h2>
+                        <p>직업 체험의 날 - 2</p>
+                        <p>갤러리 - 3</p>
+                    </div>
+                    <h3 class="article-title">손흥민, 여전히 EPL 최고의 윙어</h3>
+                    <p class="article-subtitle">출처: <a href="https://www.spotvnews.co.kr/news/articleView.html?idxno=734081#_PA">스포티비뉴스</a></p>
+                </div>
+                <div class="article-content">
+                    <img src="news.jpg" alt="뉴스 이미지" class="news-image">
+                    <img src="son.jpg" alt="손흥민" class="news-image"> <!-- 추가된 이미지 -->
+                    <div class="text-content">
+                        <p>손흥민(32, 토트넘 홋스퍼)은 올여름 스퍼스의 공격 보강을 위해 영입 대상 1순위로 꼽힌 앙투안 세메뇨(25, AFC 본머스) 앞에서 뛰어난 기량을 발휘함.</p>
+                        <p>손흥민은 최근 경기에서 환상적인 파넨카킥으로 팀을 구해내며 베테랑 면모를 보여줌.</p>
+                        <p>토트넘은 공격진 개편을 위해 세메뇨를 3350만 파운드(약 629억 원)에 영입할 계획.</p>
+                        <p>세메뇨는 이번 시즌 9골 5도움을 기록하며 팀의 주요 목표로 설정됨.</p>
+                        <p>손흥민은 본머스와의 경기에서 교체 출전하여 1골을 기록, 팀의 2-2 무승부에 기여함.</p>
+                        <p>경기 후 손흥민은 승점 3을 얻지 못한 것에 실망감을 드러냄.</p>
+                        <p>토트넘은 오는 14일 AZ알크마르와의 UEFA 유로파리그 16강 2차전을 대비하고 있음.</p>
+                    </div>
+                </div>
+            </article>
+        </main>
+    </div>
+</body>
+</html>
